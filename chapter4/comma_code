@@ -1,0 +1,10 @@
+# Chapter 4 - Comma Code
+
+
+def list_value(a_list):
+  
+    try:
+        print(*a_list[0:-1], sep=' ,', end='')
+        print(f' and {a_list[-1]}')
+    except IndexError:
+        print('Empty List')
